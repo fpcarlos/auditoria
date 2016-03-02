@@ -70,7 +70,7 @@ public class AuditoriaBean extends AbstractBean implements Serializable {
 
     public String abrirCadastroAuditoria() {
         auditoria = new Auditoria();
-        unidadeGestoraLista = new ArrayList<UnidadeGestora>();
+        unidadeGestoraLista = new ArrayList<>();
         unidadeGestoraLista.addAll(sistemaBean.getUnidadeGestoraList());
         return redirect("/sistema/auditoria/cadastroAuditorias.xhtml");
     }
